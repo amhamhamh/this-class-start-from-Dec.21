@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<style>
+		*{padding: 0px; margin:0px;}
+		h1.helloBox{ color: red; font-size: 30px; }
+		.loveSaying{ color: blue;}	
+		a{
+		  display: inline-block;
+		  border: 1px solid red;
+		  width: 200px;
+		  height: 100px;
+		  font-size: 40px;
+		}
+		p{
+		  display: inline-block;
+	          border: 1px solid blue;
+		  width: 200px;
+		  height: 100px;		
+		}
+		</style>
+	</head>
+	<body>
+		<!-- 아침 문제. 3개의 숫자를 입력하여, 3개의 숫자의 합과 평균을 구해라-->
+		<script>
+			/*
+			var inputNumber1=parseInt(prompt("첫 번째 숫자를 넣으세요"));	
+			var inputNumber2=parseInt(prompt("첫 번째 숫자를 넣으세요"));	
+			var inputNumber3=parseInt(prompt("첫 번째 숫자를 넣으세요"));	
+			var totSum=inputNumber1+inputNumber2+inputNumber3
+			document.write(totSum);	
+			document.write(totSum/3);			
+			var changeNumber="10점";
+			changeNumber=parseInt(changeNumber);
+			document.write(changeNumber);
+			*/
+		</script>
+		<!--html 태크별 class 구분-->
+		<!--
+		<h1 class="helloBox">HI! ZARD</h1> - 인라인요소는(Inline) 옆으로 찍힘
+		<h2 class="loveSaying">I LOVE ZARD</h2>	- 블럭요소(Block) 옆으로 찍힘
+		<h3 class="helloBox">ZARD</h3> - 블럭요소(Block) 밑으로 찍힘.
+		<h4>ZARD</h4>		
+		<a>1</a><a>2</a><a>3</a><a>4</a>
+		<p>A</p><p>B</p><p>C</p>
+		<h1>D</h1><h1>E</h1><h1>F</h1>		
+		<p>P 태크를 사용한 구문</p>
+		<a href="http://www.naver.com" target="self">A태크를 클릭</a>
+		<p>P 태크를 사용한 구문</p>
+		-->
+		<script>
+		/*
+		var change_number = "10살";  
+		change_number = parseInt(change_number);  
+		document.write(change_number);
+		*/
+		// 
+		var inputNumber1=parseInt(prompt("첫번째 숫자를 입력하세요."));
+		var inputNumber2=parseInt(prompt("두번째 숫자를 입력하세요."));
+		var inputNumber3=parseInt(prompt("세번째 숫자를 입력하세요."));
+		if(inputNumber1>inputNumber2){//첫번째가 두번째보다 클 경우	
+			if(inputNumber1>inputNumber3){//첫번째가 세번째보다 클경우
+				document.write(inputNumber1);// 첫번째가 큼.
+			}else{//세번째가 큼.
+				document.write(inputNumber3);// 첫번째가 큼.
+			}			
+		}else{// 두번째나 세번째가 클 경우
+			if(inputNumber2>inputNumber3){// 두번째가 클 경우.
+				document.write(inputNumber2);
+			}else{	// 아님 세번째가 큰 경우
+				document.write(inputNumber3);			
+			}
+		
+		}
+		</script>
+	</body>
+
+</html>
