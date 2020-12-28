@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!--2개 숫자를 받아 큰 수의 2승을 구하라-->
+		<script>
+		var inputNumber1 = parseInt(prompt("첫번쨰 숫자를 구하라",0));
+		var inputNumber2 = parseInt(prompt("두번쨰 숫자를 구하라",0));
+		var bigNumber="";
+		if( inputNumber1 > inputNumber2 ){
+			var bigNumber = inputNumber1; //첫번째 숫자가 클 때
+		   }else{
+			var bigNumber = inputNumber2; //두번째 숫자가 클 때
+		   }
+		document.write(Math.pow(bigNumber,2));
+		</script>
+	</body>
+
+</html>
